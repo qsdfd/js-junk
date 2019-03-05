@@ -5,7 +5,7 @@
   "main": "testi.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node testi2.js"
+    "start": "node test.js"
   },
   "author": "",
   "license": "ISC",
