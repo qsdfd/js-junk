@@ -1,0 +1,15 @@
+{
+  "name": "testi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "testi.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node testi2.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "moment-timezone": "^0.5.23"
+  }
+}
