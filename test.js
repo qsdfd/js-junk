@@ -166,6 +166,8 @@
 
 ////////////////////////////////////////////////
 // Prototypal inheritance
+// Or
+// Prototype base inheritance
 
 //
 // let car = function(model) {
@@ -184,6 +186,72 @@
 
 
 ////////////////////////////////////////////////
+// Difference between function declaration and function expression
+
+// console.log(func1());
+// console.log(expr());
+//
+// function func1() {
+//     console.log('function declaration');
+// }
+//
+// let expr = function() {
+//     consolelog('function expression')}
+
+//////////////////////////////////////////////
+
+// let p = new Promise(function (resolve, reject) {
+//     if(Math.random() > 0.5){
+//         resolve("resolved!");
+//     }else{
+//         reject("rejected!");
+//     }
+// })
+//
+// p.then(function (msg) {
+//     console.log("then: " + msg)
+// }).catch(function (err) {
+//     console.log("catch: " + err)
+// })
+
+/////////////////////////////////////////
+// always delay
+// setTimeout(function () {
+//     console.log(1);
+// }, -5) // same as 0
+//
+// console.log(2);
+// console.log(3);
 
 
+/////////////////////////////////////////
+// closures
 
+// var passed = 3;
+//
+// var addTo = function() {
+//     var inner = 2;
+//     return passed + inner
+// }
+//
+// console.log(addTo());
+//
+// console.dir(addTo)
+
+///////////////////////////////////////
+
+// let addTo = function(passed){
+//
+//     let add = function(inner){
+//         return passed + inner;
+//     };
+//
+//     return add;
+// };
+//
+// console.log(addTo(4)(5));
+//
+// let addTwo = new addTo(4);
+// let addFour = addTwo(5);
+//
+// console.log(addFour)
